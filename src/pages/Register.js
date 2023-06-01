@@ -25,10 +25,9 @@ function Register() {
   };
   const onSubmit = (e) => {
     e.preventDefault();
-    // console.log(e.target);
     const { name, email, password, isMember } = values;
     if (!email || !password || (!isMember && !name)) {
-      toast.error("Please fill all the fields");
+      toast.error("Please Fill Out All Fields");
       return;
     }
     if (isMember) {
@@ -71,7 +70,7 @@ function Register() {
           handleChange={handleChange}
         />
 
-        <button type="submit" className="btn btn-block">
+        <button type="submit" className="btn btn-block" disabled={isLoading}>
           Submit
         </button>
         <p>

@@ -6,8 +6,8 @@ const FormRowSelect = ({ labelText, name, value, handleChange, list }) => {
       </label>
       <select
         name={name}
-        id={name}
         value={value}
+        id={name}
         onChange={handleChange}
         className="form-select"
       >
@@ -22,4 +22,5 @@ const FormRowSelect = ({ labelText, name, value, handleChange, list }) => {
     </div>
   );
 };
+
 export default FormRowSelect;

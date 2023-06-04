@@ -2,7 +2,7 @@ import { FormRow, FormRowSelect } from "../../components";
 import Wrapper from "../../assets/wrappers/DashboardFormPage";
 import { useSelector, useDispatch } from "react-redux";
 import { toast } from "react-toastify";
-import { handleChange } from "../../features/job/jobSlice";
+import { handleChange, clearValues } from "../../features/job/jobSlice";
 
 const AddJob = () => {
   const {
@@ -61,16 +61,17 @@ const AddJob = () => {
             handleChange={handleJobInput}
           />
           {/* for job status */}
+
           <FormRowSelect
-            name=" status"
+            name="status"
             value={status}
             handleChange={handleJobInput}
             list={statusOptions}
           />
 
-          {/* for job types */}
           <FormRowSelect
-            name=" job type"
+            name="jobType"
+            labelText="job type"
             value={jobType}
             handleChange={handleJobInput}
             list={jobTypeOptions}
@@ -81,7 +82,7 @@ const AddJob = () => {
             <button
               type="button"
               className="btn btn-block clear-btn"
-              onClick={() => console.log("clear values")}
+              onClick={() => dispatch(clearValues())}
             >
               clear
             </button>

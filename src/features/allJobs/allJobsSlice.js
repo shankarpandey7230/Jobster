@@ -11,7 +11,7 @@ const initialStateFilterState = {
 };
 
 const initialState = {
-  isLoading: false,
+  isLoading: true,
   jobs: [],
   totalJobs: 0,
   numOfPages: 1,

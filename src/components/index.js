@@ -6,6 +6,8 @@ import Navbar from "./Navbar";
 import NavLinks from "./NavLinks";
 import FormRowSelect from "./FormRowSelect";
 
+import JobsContainer from "./JobsContainer";
+import SearchContainer from "./SearchContainer";
 export {
   Logo,
   FormRow,
@@ -14,4 +16,6 @@ export {
   Navbar,
   NavLinks,
   FormRowSelect,
+  JobsContainer,
+  SearchContainer,
 };

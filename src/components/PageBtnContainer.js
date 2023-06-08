@@ -1,7 +1,6 @@
 import { HiChevronDoubleLeft, HiChevronDoubleRight } from "react-icons/hi";
 import Wrapper from "../assets/wrappers/PageBtnContainer";
 import { useSelector, useDispatch } from "react-redux";
-
 const PageBtnContainer = () => {
   const { numOfPages, page } = useSelector((store) => store.allJobs);
   const dispatch = useDispatch();
@@ -32,9 +31,11 @@ const PageBtnContainer = () => {
         })}
       </div>
       <button className="next-btn" onClick={nextPage}>
-        next <HiChevronDoubleRight />
+        next
+        <HiChevronDoubleRight />
       </button>
     </Wrapper>
   );
 };
+
 export default PageBtnContainer;

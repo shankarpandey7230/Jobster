@@ -15,7 +15,7 @@ const initialState = {
   jobs: [],
   totalJobs: 0,
   numOfPages: 1,
-  pages: 1,
+  page: 5,
   stats: {},
   monthlyApplications: [],
   ...initialStateFilterState,

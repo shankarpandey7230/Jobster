@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 // import { clear } from "@testing-library/user-event/dist/clear";
 import { toast } from "react-toastify";
-import customFetch from "../../utils/axios";
+
 import { getUserFromLocalStorage } from "../../utils/localStorage";
 
 // import { clear } from "@testing-library/user-event/dist/clear";
